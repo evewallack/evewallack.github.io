@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Anton|Lato" rel="stylesheet">
   <title>Typographic Freak-Out by Tom Harrad :)</title>
 
@@ -65,17 +66,18 @@
     }
 
     .column {
-      width: 79rem; /* Set your column width here */
+      width: 20rem; /* Set your column width here */
       margin: auto;
     }
 
     /* Larger than mobile */
-    @media (min-width: 400px) {}
-    	
-    }
-	
-    }
-    	
+    @media (min-width: 400px) {
+	    .column {
+	      width: 30rem; /* Set your column width here */
+	    }
+	    p {
+	      font-size: 2rem; 
+	  }
     }
 		
     /* Larger than phablet (also point when grid becomes active) */
