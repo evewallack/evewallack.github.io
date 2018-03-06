@@ -25,7 +25,7 @@
     }
 
     body {
-      font-size: 1.7em; /* currently ems cause chrome bug misinterpreting rems on body element */
+      font-size: 1.3em; /* currently ems cause chrome bug misinterpreting rems on body element */
       line-height: 1.7;
       font-weight: 400;
       margin: 0;
@@ -66,7 +66,7 @@
     }
 
     .column {
-      width: 20rem; /* Set your column width here */
+      width: 24rem; /* Set your column width here */
       margin: auto;
     }
 
@@ -76,12 +76,17 @@
 	      width: 30rem; /* Set your column width here */
 	    }
 	    p {
-	      font-size: 2rem; 
+	      font-size: 1.3rem; 
 	  }
     }
 		
     /* Larger than phablet (also point when grid becomes active) */
-    @media (min-width: 550px) {}
+    @media (min-width: 550px) {
+		.column {
+	      width: 50rem; /* Set your column width here */
+	    }
+    	
+    }
 
     /* Larger than tablet */
     @media (min-width: 750px) {}
@@ -90,7 +95,12 @@
     @media (min-width: 1000px) {}
 
     /* Larger than Desktop HD */
-    @media (min-width: 1200px) {}
+    @media (min-width: 1200px) {
+	    .column {
+	      width: 79rem; /* Set your column width here */
+	      margin: auto;
+	    }
+    }
     
   </style>
 </head>
